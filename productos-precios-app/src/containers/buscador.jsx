@@ -24,17 +24,17 @@ class Buscador extends Component {
                 <label>
                 Producto:
                 <div className="form-group">
-    <label className="form-label">Barcode</label>
-    <input
-      className="form-control"
-      id="Barcode"
-      name="Barcode"
-      type="text"
-      value=""
-      onChange={this.myChangeHandler}
-      placeholder="Scan Barcode"
-      />
-  </div>
+                    <label className="form-label">Barcode</label>
+                    <input
+                        className="form-control"
+                        id="Barcode"
+                        name="Barcode"
+                        type="text"
+                        value="0"
+                        onChange={this.myChangeHandler}
+                        placeholder="Scan Barcode"
+                    />
+                </div>
 
                 </label>
                 <Button 
