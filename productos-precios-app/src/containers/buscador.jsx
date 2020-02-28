@@ -17,7 +17,7 @@ class Buscador extends Component {
             
             <form className="container-fluid" onSubmit={this.handleFormSubmit}>
                 <label>
-                Barcode 2:
+                Producto:
                 <Input inputType={'text'}
                     title= {'Barcode'} 
                     name= {'barcode'}
