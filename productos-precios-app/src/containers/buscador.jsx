@@ -12,9 +12,10 @@ class Buscador extends Component {
     }
     render() {
         return (
+            
             <form className="container-fluid" onSubmit={this.handleFormSubmit}>
                 <label>
-                Barcode:
+                Barcode 2:
                 <Input inputType={'text'}
                     title= {'barcode'} 
                     name= {'barcode'}
