@@ -10,19 +10,28 @@ import Button from '../components/Button'
 class Buscador extends Component {  
     constructor(props) {
         super(props);
-        
+        this.state = {
+            producto: {
+                barcode: ''
+            }
+        }
 
     }
     myChangeHandler(e) {
-        //let value = e.target.value;
+        let value = e.target.value;
+   this.setState( prevState => ({ producto : 
+        {...prevState.producto, barcode: value
+        }
+      }), () => console.log(this.state.producto))
+
     }
     handleFormSubmit(e) {
         e.preventDefault();
-        let userData = this.state.newUser;
+        let productData = this.state.producto;
     
         fetch('http://example.com',{
             method: "POST",
-            body: JSON.stringify(userData),
+            body: JSON.stringify(productData),
             headers: {
               'Accept': 'application/json',
               'Content-Type': 'application/json'
