@@ -23,14 +23,18 @@ class Buscador extends Component {
             <form className="container-fluid" onSubmit={this.handleFormSubmit}>
                 <label>
                 Producto:
-                <Input inputtype={'text'}
-                    title= {'Barcode'}
-                    name= {'barcode'}
-                    value={''}
-                    placeholder = {'scan barcode'}
-                    myChangeHandler = {this.myChangeHandler}
-
-                    /> {/* Barcode search */}
+                <div className="form-group">
+    <label className="form-label">Barcode</label>
+    <input
+      className="form-control"
+      id="Barcode"
+      name="Barcode"
+      type="text"
+      value=""
+      onChange={this.myChangeHandler}
+      placeholder="Scan Barcode"
+      />
+  </div>
 
                 </label>
                 <Button 
