@@ -18,24 +18,6 @@ class Buscador extends Component {
     myChangeHandler = (e) => {
         this.setState({barcode: e.target.value});
     }
-    /*handleFormSubmit(e) {
-        e.preventDefault();
-        console.log(this.state.barcode);
-        let productData = this.state.barcode;
-    
-        fetch('buscar_producto',{
-            method: "POST",
-            body: JSON.stringify(productData),
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-          }).then(response => {
-            response.json().then(data =>{
-              console.log("Successful" + data);
-            })
-        })
-      }   */
     mySubmitHandler = (e) => {
         e.preventDefault();
         console.log(this.state.barcode);
