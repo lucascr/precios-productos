@@ -14,7 +14,7 @@ class Buscador extends Component {
 
     }
     myChangeHandler(e) {
-        let value = e.target.value;
+        //let value = e.target.value;
     }
      
     render() {
