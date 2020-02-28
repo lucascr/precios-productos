@@ -10,16 +10,12 @@ import Button from '../components/Button'
 class Buscador extends Component {  
     constructor(props) {
         super(props);
-
+        
         this.handleBarcode = this.handleBarcode.bind(this);
 
     }
     handleBarcode(e) {
         let value = e.target.value;
-        this.setState( prevState => ({ newUser : 
-             {...prevState.newUser, name: value
-             }
-           }), () => console.log(this.state.newUser))
        }
      
     render() {
