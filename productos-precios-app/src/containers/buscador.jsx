@@ -11,9 +11,7 @@ class Buscador extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            producto: {
-                barcode: ''
-            }
+            barcode: ''
         }
 
     }
@@ -23,7 +21,7 @@ class Buscador extends Component {
             {...prevState.producto, barcode: value
         }
         }), () => console.log(this.state.producto))*/
-        this.setState({producto.barcode: e.target.value});
+        this.setState({barcode: e.target.value});
     }
     handleFormSubmit(e) {
         e.preventDefault();
