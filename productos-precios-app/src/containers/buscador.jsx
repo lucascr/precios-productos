@@ -18,7 +18,7 @@ class Buscador extends Component {
             <form className="container-fluid" onSubmit={this.handleFormSubmit}>
                 <label>
                 Barcode 2:
-                <Input /> {/* Name of the user */}
+                <Input /> {/* Barcode */}
 
                 </label>
                 <Button 
