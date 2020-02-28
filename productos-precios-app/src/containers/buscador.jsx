@@ -58,7 +58,6 @@ class Buscador extends Component {
                         id="Barcode"
                         name="Barcode"
                         type="text"
-                        value="0"
                         onChange={this.myChangeHandler}
                         placeholder="Scan Barcode"
                     />
