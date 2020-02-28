@@ -29,7 +29,7 @@ class Buscador extends Component {
                     name= {'barcode'}
                     value={''}
                     placeholder = {'scan barcode'}
-                    handleChange = {this.handleBarcode}
+                    handlechange = {this.handleBarcode}
 
                     /> {/* Barcode search */}
 
