@@ -12,7 +12,7 @@ const Input = (props) => {
       name={props.name}
       type={props.inputType}
       value={props.value}
-      onChange={props.handlechange}
+      onChange={props.handleChange}
       placeholder={props.placeholder} 
       {...props} />
   </div>
