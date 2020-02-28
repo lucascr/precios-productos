@@ -23,9 +23,7 @@ class Buscador extends Component {
             {...prevState.producto, barcode: value
         }
         }), () => console.log(this.state.producto))*/
-        //    this.setState({username: event.target.value});
-
-
+        this.setState({producto.barcode: e.target.value});
     }
     handleFormSubmit(e) {
         e.preventDefault();
