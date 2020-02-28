@@ -18,11 +18,13 @@ class Buscador extends Component {
 
     }
     myChangeHandler(e) {
-        let value = e.target.value;
-   this.setState( prevState => ({ producto : 
-        {...prevState.producto, barcode: value
+        /*let value = e.target.value;
+        this.setState( prevState => ({ producto : 
+            {...prevState.producto, barcode: value
         }
-      }), () => console.log(this.state.producto))
+        }), () => console.log(this.state.producto))*/
+        //    this.setState({username: event.target.value});
+
 
     }
     handleFormSubmit(e) {
