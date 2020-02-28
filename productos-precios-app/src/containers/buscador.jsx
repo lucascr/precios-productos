@@ -11,10 +11,9 @@ class Buscador extends Component {
     constructor(props) {
         super(props);
         
-        this.handleBarcode = this.handleBarcode.bind(this);
 
     }
-    handleBarcode(e) {
+    myChangeHandler(e) {
         let value = e.target.value;
        }
      
@@ -29,7 +28,7 @@ class Buscador extends Component {
                     name= {'barcode'}
                     value={''}
                     placeholder = {'scan barcode'}
-                    handleChange = {this.handleBarcode}
+                    handleChange = {this.myChangeHandler}
 
                     /> {/* Barcode search */}
 
