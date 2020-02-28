@@ -69,7 +69,7 @@ class Buscador extends Component {
                     type = {'primary'} 
                     title = {'Submit'} 
                     style={buttonStyle}
-                    /> { /*Submit */ }
+                    /> 
             </form>
         )
     }
