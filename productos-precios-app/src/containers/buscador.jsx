@@ -18,12 +18,12 @@ class Buscador extends Component {
     myChangeHandler = (e) => {
         this.setState({barcode: e.target.value});
     }
-    handleFormSubmit(e) {
+    /*handleFormSubmit(e) {
         e.preventDefault();
         console.log(this.state.barcode);
         let productData = this.state.barcode;
     
-        fetch('http://example.com',{
+        fetch('buscar_producto',{
             method: "POST",
             body: JSON.stringify(productData),
             headers: {
@@ -35,12 +35,17 @@ class Buscador extends Component {
               console.log("Successful" + data);
             })
         })
-      }   
+      }   */
+    mySubmitHandler = (e) => {
+        e.preventDefault();
+        console.log(this.state.barcode);
+
+    }
     
     render() {
         return (
             
-            <form className="container-fluid" onSubmit={this.handleFormSubmit}>
+            <form className="container-fluid" onSubmit={this.mySubmitHandler}>
                 <label>
                 Producto:
                 <div className="form-group">
@@ -57,7 +62,7 @@ class Buscador extends Component {
 
                 </label>
                 <Button 
-                    action = {this.handleFormSubmit}
+                    action = {this.mySubmitHandler}
                     type = {'primary'} 
                     title = {'Submit'} 
                     style={buttonStyle}
@@ -67,7 +72,4 @@ class Buscador extends Component {
     }
 } 
 
-const buttonStyle = {
-    margin : '10px 10px 10px 10px'
-  }
 export default Buscador;
