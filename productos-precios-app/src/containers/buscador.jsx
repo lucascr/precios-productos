@@ -20,7 +20,8 @@ class Buscador extends Component {
     }
     handleFormSubmit(e) {
         e.preventDefault();
-        let productData = this.state.producto;
+        console.log(this.state.barcode);
+        let productData = this.state.barcode;
     
         fetch('http://example.com',{
             method: "POST",
