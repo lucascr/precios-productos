@@ -1,34 +1,17 @@
 import React, {Component} from 'react';  
 
-import CheckBox from '../components/CheckBox';  
-import Input from '../components/Input';  
-import TextArea from '../components/TextArea';  
-import Select from '../components/Select';
-import Button from '../components/Button'
-
-class Buscador extends Component {  
+class AgregarProductoPrecio extends Component {  
     constructor(props) {
         super(props);
-        this.state = {
-            barcode: ''
-        }
 
     }
-    myChangeHandler = (e) => {
-        this.setState({barcode: e.target.value});
-    }
-    mySubmitHandler = (e) => {
-        e.preventDefault();
-        console.log(this.state.barcode);
-
-    }
-    
     render() {
         return (
             
             <form className="container-fluid" onSubmit={this.mySubmitHandler}>
                 <label>
                 Producto:
+                </label>
                 <div className="form-group">
                     <label className="form-label">Barcode</label>
                     <input
@@ -36,24 +19,36 @@ class Buscador extends Component {
                         id="Barcode"
                         name="Barcode"
                         type="text"
-                        onChange={this.myChangeHandler}
-                        placeholder="Scan Barcode"
+                        placeholder="Barcode"
                     />
                 </div>
 
-                </label>
+                <div className="form-group">
+                    <label className="form-label">Precio</label>
+                    <input
+                        className="form-control"
+                        id="Barcode"
+                        name="Barcode"
+                        type="text"
+                        placeholder="Barcode"
+                    />
+                </div>
+
+                <div className="form-group">
+                    <label className="form-label">Local Comercial</label>
+                    
+                </div>
+                
+
                 <Button 
                     action = {this.mySubmitHandler}
                     type = {'primary'} 
-                    title = {'Buscar'} 
+                    title = {'Agregar'} 
                     style={buttonStyle}
                     /> 
             </form>
         )
     }
-} 
+}
 
-const buttonStyle = {
-    margin : '10px 10px 10px 10px'
-  }
-export default Buscador;
+export default AgregarProductoPrecio;
