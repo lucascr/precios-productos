@@ -16,7 +16,24 @@ class Buscador extends Component {
     myChangeHandler(e) {
         //let value = e.target.value;
     }
-     
+    handleFormSubmit(e) {
+        e.preventDefault();
+        let userData = this.state.newUser;
+    
+        fetch('http://example.com',{
+            method: "POST",
+            body: JSON.stringify(userData),
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+          }).then(response => {
+            response.json().then(data =>{
+              console.log("Successful" + data);
+            })
+        })
+      }   
+    
     render() {
         return (
             
