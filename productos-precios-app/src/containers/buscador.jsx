@@ -11,7 +11,17 @@ class Buscador extends Component {
     constructor(props) {
         super(props);
 
+        this.handleBarcode = this.handleBarcode.bind(this);
+
     }
+    handleBarcode(e) {
+        let value = e.target.value;
+        this.setState( prevState => ({ newUser : 
+             {...prevState.newUser, name: value
+             }
+           }), () => console.log(this.state.newUser))
+       }
+     
     render() {
         return (
             
@@ -19,10 +29,12 @@ class Buscador extends Component {
                 <label>
                 Producto:
                 <Input inputType={'text'}
-                    title= {'Barcode'} 
+                    title= {'Barcode'}
                     name= {'barcode'}
-                    value={''} 
-                    placeholder = {'scan barcode'}                    
+                    value={''}
+                    placeholder = {'scan barcode'}
+                    handleChange = {this.handleBarcode}
+
                     /> {/* Barcode search */}
 
                 </label>
