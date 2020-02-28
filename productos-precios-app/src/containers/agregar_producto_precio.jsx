@@ -27,10 +27,10 @@ class AgregarProductoPrecio extends Component {
                     <label className="form-label">Precio</label>
                     <input
                         className="form-control"
-                        id="Barcode"
-                        name="Barcode"
+                        id="Precio"
+                        name="Precio"
                         type="text"
-                        placeholder="Barcode"
+                        placeholder="Precio"
                     />
                 </div>
 
