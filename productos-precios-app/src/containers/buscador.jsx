@@ -15,7 +15,7 @@ class Buscador extends Component {
     }
     myChangeHandler(e) {
         let value = e.target.value;
-       }
+    }
      
     render() {
         return (
@@ -28,7 +28,7 @@ class Buscador extends Component {
                     name= {'barcode'}
                     value={''}
                     placeholder = {'scan barcode'}
-                    handleChange = {this.myChangeHandler}
+                    myChangeHandler = {this.myChangeHandler}
 
                     /> {/* Barcode search */}
 
