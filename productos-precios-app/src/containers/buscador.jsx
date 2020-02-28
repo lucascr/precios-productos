@@ -9,6 +9,8 @@ import Button from '../components/Button'
 
 class Buscador extends Component {  
     constructor(props) {
+        super(props);
+
     }
     render() {
         return (
@@ -33,5 +35,9 @@ class Buscador extends Component {
             </form>
         )
     }
-}  
+} 
+
+const buttonStyle = {
+    margin : '10px 10px 10px 10px'
+  }
 export default Buscador;
