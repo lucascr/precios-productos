@@ -38,7 +38,7 @@ class Buscador extends Component {
                         type="text"
                         onChange={this.myChangeHandler}
                         placeholder="Scan Barcode"
-                        autocomple="off"
+                        autocomplete="off"
                     />
                 </div>
 
